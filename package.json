@@ -1,0 +1,14 @@
+{
+  "name": "dcc",
+  "version": "1.0.0",
+  "description": "We love ice cream! Tell us what the top five ice cream shops in Alpharetta are and why.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rana Saha",
+  "license": "ISC",
+  "dependencies": {
+    "yelp-fusion": "^3.0.0"
+  }
+}
