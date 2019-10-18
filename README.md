@@ -1,4 +1,4 @@
-# Developer Code Chalange with Node.js
+# Developer Code Chalange (JavaScript)
 
 This script was written to perform a search top five ice cream shops in Alpharetta with review. As per instruction Yelp-Fusion API used for that.
 
@@ -33,6 +33,18 @@ Once you're all setup, you should be able to run the script directly from the co
 $ node index.js
 ```
 
+## Output
+
+Five top output will come as per below one by one basis on rating and location.
+Altough rating was not asked to display - but still kept with heading for better presentation
 
 ```
+------------------------------------------
+# 1 Scream'n Nuts (4.5) 
+------------------------------------------
+Address:  5950 North Point Pkwy ,  Alpharetta
+Review By:  Sunita M.
+Review:  Step aside diabetes, I am trying this doughnut. The Nutella doughnut is amazing!!! It is jumbo-sized and can definitely be shared among a few.. 
 
+There are...
+```

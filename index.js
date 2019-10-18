@@ -3,6 +3,7 @@
 const yelp = require('yelp-fusion');
 
 // Place holder for Yelp Fusion's API Key.
+// We should read it from a .env file but it kept intentionally over here to ease of testing
 const apiKey = 'hkcug0OqwVTZxUnSHxVlltIUywqHW6ntU5Vy68S_nTaKlui6_EeM261qCZZYmzmQBrs92R5H0rVIVCWtujxmOxlBLal0oLJm_VM1ctsQcJhG5o_VJpv0_eBuRKSoXXYx';
 
 // Set the searchable parameter
@@ -30,7 +31,7 @@ client.search(searchRequest).then(response => {
     let i=1;
     completeResponse.forEach(element => {
         console.log("------------------------------------------");
-        console.log("# "+i++, element.name, '('+element.rating+')');
+        console.log("# "+i++, element.name, '('+element.rating+')'); // Rating not asked but still kept with heading for better presentation
         console.log("------------------------------------------");
         console.log("Address: ", element.location.address1, ', ',  element.location.city);
         if (Array.isArray(element.reviews)) {
