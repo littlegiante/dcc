@@ -24,7 +24,7 @@ Install the dependences:
 Hoping you already have Node (npm) installed, if not you can install it from https://nodejs.org
 
 ```
-$ npm install 
+$ npm install
 ```
 
 ## Usage
@@ -37,7 +37,7 @@ $ node index.js
 
 ## Output
 
-Five top output will come as per below one by one basis on rating and location.
+Five top output will come one by one basis on rating in specified location.
 Altough rating was not asked to display - but still kept with heading for better presentation
 
 ```
