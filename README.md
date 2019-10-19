@@ -1,6 +1,6 @@
 # Developer Code Chalange (JavaScript)
 
-This script was written to perform a search top five ice cream shops in Alpharetta with review. As per instruction Yelp-Fusion API used for that.
+This script was written to perform a search of top five ice cream shops in Alpharetta with review. As per instruction I hvae used Yelp-Fusion API for that.
 
 # Without reinventing the wheel again
 As the Yelp fusion already provide a starter wrapper for the API so I have used that NPM-Package (yelp-fusion: https://github.com/tonybadguy/yelp-fusion). Which should be compatible with Node.js 4 and higher.
@@ -20,6 +20,8 @@ $ cd dcc
 ```
 
 Install the dependences:
+
+Hoping you already have Node (npm) installed, if not you can install it from https://nodejs.org
 
 ```
 $ npm install 
