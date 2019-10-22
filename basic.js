@@ -1,6 +1,6 @@
 'use strict';
 
-const yelp = require('yelp-fusion');
+const Yelp = require('yelp-fusion');
 
 // Place holder for Yelp Fusion's API Key.
 // We should read it from a .env file but it kept intentionally over here to ease of testing
@@ -15,7 +15,7 @@ const searchRequest = {
   limit: 5 // No of records need to be listed
 };
 // Using The yelp-fusion API Client (https://github.com/tonybadguy/yelp-fusion)
-const client = yelp.client(apiKey);
+const client = Yelp.client(apiKey);
 
 // Will contain all the requested Promise calls
 let requestPromises = [];
