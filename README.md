@@ -87,4 +87,4 @@ As it was specified that the listing should be done as per the order returned by
 
 ## Goal
 
-I have tryied to ilustrate that we can solve the statement in different way as per requirements and context. My intention was to shoe that the bare menium problem statement should be solved in a presentable way.
+I have tryied to ilustrate that we can solve the statement in different way as per requirements and context. My intention was to solve the bare minimum problem statement in a presentable way.
