@@ -47,7 +47,6 @@ class ListBusiness {
         for (let i=0; i<this._businessList.length; i++) {
             await this._populateReview(this._businessList[i].id);    
         }
-        //console.log(this.htmlRender());
         return this._htmlRender();
         
     }
@@ -79,7 +78,7 @@ class ListBusiness {
             <div class="container-fluid">
                 <div class="panel panel-success">
                     <div class="panel-heading">
-                        <h3 class="panel-title"> `+element.name+` <span class="label label-info">`+element.rating+` (`+element.review_count+`)) </span></h3>
+                        <h3 class="panel-title"> `+element.name+` <span class="label label-info">`+element.rating+` (`+element.review_count+`) </span></h3>
                     </div>
                     <ul class="list-group">
                         <li class="list-group-item">Address: `+element.location.address1+`, `+element.location.city+`</li>
@@ -103,7 +102,7 @@ class ListBusiness {
 
     // Populate the review as per the business ID provided
     _populateReview = async (id) => {
-        let reviews = await this._client.reviews(id);
+        let reviews = await this._client.reviews(id).catch(e => {console.log(e)});
         if (reviews.jsonBody.hasOwnProperty('reviews')) {
             this._reviews[id] = reviews.jsonBody.reviews;
         } else {

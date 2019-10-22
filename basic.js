@@ -13,6 +13,8 @@ const searchRequest = {
   radius: 5000, // Has to given to list sprcific to city Alpharetta
   sort_by: 'rating', // As we are looking for top
   limit: 5 // No of records need to be listed
+  // if you increase the limit in this approch Yelp-Fusion API will restrict QPS
+  // Solution is to limit the too frequently call per sec
 };
 // Using The yelp-fusion API Client (https://github.com/tonybadguy/yelp-fusion)
 const client = Yelp.client(apiKey);
@@ -23,10 +25,10 @@ let requestPromises = [];
 // Searching for business
 client.search(searchRequest).then(response => {  
     requestPromises = response.jsonBody.businesses.map(entity => {
-        return gettingReview(entity)
+        return gettingReview(entity); 
     });
     return Promise.all(requestPromises).catch(e => { 
-        console.log(e)
+        console.log(e);
     }); // Ensuring that all the Async call resolved with all the information
 }).then(completeResponse => {
     // Lets print in console

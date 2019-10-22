@@ -64,7 +64,7 @@ Run the below command in your console.
 $ node server.js
 ```
 
-In this approch I have useed Async Await in place of Promise, as a result I can solve the Queries-Per-Second (QPS) limittetion of Yelp-Fusion API. Also I have useed Bootstrap 3 (CDN) to represent the content in presentable way. I also restucture it in to object oriented way so that it can be more extendable and moduler.
+In this approch I have useed Async Await in place of Promise, as a result I can solve the Queries-Per-Second (QPS) limittetion of Yelp-Fusion API. Also I have useed Bootstrap 3 (CDN) to represent the content in presentable way. I also stuctureed it in to object oriented way so that it can be more extendable and moduler.
 
 ## Output
 

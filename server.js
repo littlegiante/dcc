@@ -20,7 +20,6 @@ const server = http.createServer((req, res) => {
    
     // Lets Show the business content
     list.showBusiness().then(html => {
-        console.log(html);
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html');
         res.end(html);
@@ -28,6 +27,13 @@ const server = http.createServer((req, res) => {
   
 });
 
+// If the server is not able to start - inform the user
+server.on('error', function (e) {
+    console.log(e.message);
+    
+});
+
+// Start listening
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
